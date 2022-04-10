@@ -37,6 +37,10 @@ public class GoogleTests {
         Assert.assertEquals(driver.getTitle(), "Google");
     }
 
+    @Test
+    public void TestGooooogle(){
+        Assert.assertEquals(driver.findElement(By.cssSelector("div#SIvcob")).getText(),"dfghjnkml");
+    }
     @AfterTest
     public void closeDriver() {
         driver.quit();
